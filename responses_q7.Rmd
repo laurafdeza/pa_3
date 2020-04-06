@@ -1,0 +1,44 @@
+---
+title: "responses_q7"
+author: "Laura FdezA"
+date: "4/4/2020"
+output: html_document
+---
+
+Respond to the following questions:
+1. Examine the portion of the script you see below. In your own words what does this section do and why does it work? Demonstrate that you understand the code….
+      vonset = Get starting point: 2, 2           
+      voffset = Get end point: 2, 2               
+      durationV = voffset - vonset
+      per20 = vonset + (durationV * 0.20)
+      per35 = vonset + (durationV * 0.35)
+      per50 = vonset + (durationV * 0.50)
+      per65 = vonset + (durationV * 0.65)
+      per80 = vonset + (durationV * 0.80)
+
+From the second tier selects the points that mark the beginning and the start of every second interval.    
+It substracts the starting point from the end point for each selected interval to calculate how long the interval lasts.
+Since the starting point, it calculates the % of the duration to mark that moment in the vowel.
+
+2. In a few short sentences describe the general outline of the script, what the purpose is, and how it acheives this purpose (hint: focus on the section dividers and the comments)
+From the stimuli and the text grid, the code selects the specific items we want to analyze and generates a .csv file with the info we need on vowel duration, the vowel we have selected in the .TextGrid and the language we have assigned to each item. For each vowel to be analyzed, it calculates the duration and the moments at % of the duration. It also creates a new column with the speaker's id.
+
+3. In a few short sentences describe how the segmenting procedure you used this week differs from that used in pa_2. What are the advantages and disadvantages?
+Segmenting procedure in pa_3:
+   - Record everything in one single track
+   - Create textgrid
+   - Create tiers
+   - Manually insert intervals and points
+   - Script extracts values
+Segmenting procedure in pa_2:
+   - Record everything in single track
+   - Create textgrid
+   - Create tiers
+   - Manually insert intervals and points
+   - Script segments into individual tracks
+   - Create textgrid for each segment
+   - Create tiers
+   - Manually insert intervals and points
+   - Script extracts values
+pa_2 procedure takes longer but if there're errors, they should be easier to find. Also, it forces you to save your work every few minutes so you don't waste your time if the program/computer collapses, which might happen with the single track (pa_3) if you don't remember to save it every once in a while. However, because there are more files in pa_2, it might be easier to skip a segment or lose track of what you've done or you haven't yet.
+
